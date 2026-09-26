@@ -1,0 +1,23 @@
+.nav_bar{
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    display: inline;
+}
+.logo{
+    border: 1px solid rgb(41, 39, 39);
+    width: 50%;
+}
+.logo_text{
+    font-size: 70px;
+    color: blue;
+}
+.menu ul{
+    width: 40px;
+    display: inline-flex;
+    font-size: 40px;
+    list-style: none;
+}
+.menu ul li{
+    margin-left: 30px;
+}
