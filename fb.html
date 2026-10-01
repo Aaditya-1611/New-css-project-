@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Top blue bar ===== -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#" class="logo">facebook</a>
+
+      <form class="login-form" action="#" method="post">
+        <div class="login-field">
+          <label for="login-email">Email</label>
+          <input type="text" id="login-email" name="email">
+          <label class="remember">
+            <input type="checkbox" name="persistent"> Keep me logged in
+          </label>
+        </div>
+        <div class="login-field">
+          <label for="login-pass">Password</label>
+          <input type="password" id="login-pass" name="pass">
+          <a href="#" class="forgot">Forgot your password?</a>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- ===== Main content ===== -->
+  <main class="main">
+    <div class="main-inner">
+
+      <!-- Left column -->
+      <section class="intro">
+        <h2>Facebook helps you connect and share with the people in your life.</h2>
+
+        <svg class="world" viewBox="0 0 330 210" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- soft continents -->
+          <g fill="#dfe3ee">
+            <path d="M20 40 Q60 10 120 25 Q150 40 140 70 Q120 100 90 95 Q70 130 55 110 Q25 85 20 40Z"/>
+            <path d="M110 120 Q140 110 150 140 Q145 185 125 195 Q105 170 110 120Z"/>
+            <path d="M170 35 Q220 15 270 30 Q310 45 300 80 Q280 110 240 105 Q215 135 195 110 Q170 90 170 35Z"/>
+            <path d="M200 125 Q235 115 255 140 Q250 175 225 185 Q200 165 200 125Z"/>
+            <path d="M275 140 Q305 135 315 160 Q300 185 280 175Z"/>
+          </g>
+          <!-- dashed connections -->
+          <g fill="none" stroke="#9aa4d6" stroke-width="1.2" stroke-dasharray="3 3">
+            <path d="M25 70 Q60 40 105 55"/>
+            <path d="M105 55 Q140 60 175 50"/>
+            <path d="M25 70 Q70 110 120 115"/>
+            <path d="M105 55 Q120 90 120 115"/>
+            <path d="M175 50 Q215 85 240 115"/>
+            <path d="M120 115 Q175 140 175 175"/>
+            <path d="M175 50 Q250 20 295 28"/>
+            <path d="M240 115 Q290 110 295 28"/>
+            <path d="M175 175 Q230 130 240 115"/>
+            <path d="M240 115 Q290 170 295 170"/>
+            <path d="M175 175 Q250 190 295 170"/>
+          </g>
+          <!-- people -->
+          <g fill="#f0a030" stroke="#c9801a" stroke-width="0.8">
+            <g id="p"><circle cx="0" cy="-8" r="5"/><path d="M-8 8 Q-8 -1 0 -1 Q8 -1 8 8Z"/></g>
+            <use href="#p" x="25" y="70"/>
+            <use href="#p" x="105" y="55"/>
+            <use href="#p" x="175" y="50"/>
+            <use href="#p" x="295" y="28"/>
+            <use href="#p" x="120" y="115"/>
+            <use href="#p" x="240" y="115"/>
+            <use href="#p" x="175" y="175"/>
+            <use href="#p" x="295" y="170"/>
+          </g>
+        </svg>
+      </section>
+
+      <!-- Right column: sign up -->
+      <section class="signup">
+        <h3>Sign Up</h3>
+        <p class="free">It's free, and always will be.</p>
+
+        <form action="#" method="post">
+          <div class="row">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first_name">
+          </div>
+          <div class="row">
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last_name">
+          </div>
+          <div class="row">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="row">
+            <label for="email2">Re-enter Email:</label>
+            <input type="email" id="email2" name="email_confirm">
+          </div>
+          <div class="row">
+            <label for="pw">New Password:</label>
+            <input type="password" id="pw" name="password">
+          </div>
+
+          <div class="row">
+            <label for="sex">I am:</label>
+            <select id="sex" name="sex" class="sel-sex">
+              <option>Select Sex:</option>
+              <option>Female</option>
+              <option>Male</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label>Birthday:</label>
+            <div class="birthday">
+              <select name="month">
+                <option>Month:</option>
+                <option>January</option><option>February</option><option>March</option>
+                <option>April</option><option>May</option><option>June</option>
+                <option>July</option><option>August</option><option>September</option>
+                <option>October</option><option>November</option><option>December</option>
+              </select>
+              <select name="day">
+                <option>Day:</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8</option>
+                <option>9</option><option>10</option><option>11</option><option>12</option>
+                <option>13</option><option>14</option><option>15</option><option>16</option>
+                <option>17</option><option>18</option><option>19</option><option>20</option>
+                <option>21</option><option>22</option><option>23</option><option>24</option>
+                <option>25</option><option>26</option><option>27</option><option>28</option>
+                <option>29</option><option>30</option><option>31</option>
+              </select>
+              <select name="year">
+                <option>Year:</option>
+                <option>2010</option><option>2000</option><option>1990</option>
+                <option>1980</option><option>1970</option><option>1960</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row why">
+            <a href="#">Why do I need to provide this?</a>
+          </div>
+
+          <div class="row">
+            <button type="submit" class="signup-btn">Sign Up</button>
+          </div>
+        </form>
+
+        <p class="create-page">
+          <a href="#">Create a Page</a> for a celebrity, band or business.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="languages">
+        <a href="#">English (US)</a>
+        <a href="#">Español</a>
+        <a href="#">Português (Brasil)</a>
+        <a href="#">Français (France)</a>
+        <a href="#">Deutsch</a>
+        <a href="#">Italiano</a>
+        <a href="#">العربية</a>
+        <a href="#">हिन्दी</a>
+        <a href="#">中文(简体)</a>
+        <a href="#">日本語</a>
+        <a href="#">»</a>
+      </div>
+      <div class="footer-links">
+        <span>Facebook © 2010</span>
+        <nav>
+          <a href="#">Mobile</a>
+          <a href="#">Find Friends</a>
+          <a href="#">Badges</a>
+          <a href="#">About</a>
+          <a href="#">Advertising</a>
+          <a href="#">Developers</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Help</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

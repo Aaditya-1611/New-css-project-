@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    border: 2px solid rgb(109, 214, 249);
+    width: 300px;
+    padding: 200px;
+    background-image: linear-gradient(to right, rgb(167, 212, 227), rgb(176, 110, 110));
+    position: relative;
+} 
+.box2{
+    border: 1px solid rgb(9, 9, 9);
+    width: 20px;
+    padding: 100px;
+    background-color: blue;
+    position: inherit;
+}
+.box3{
+    border: 1px solid rgb(156, 103, 103);
+    width: 100px;
+    padding: 50px;
+    position: inherit;
+    background-color: green;
+}
