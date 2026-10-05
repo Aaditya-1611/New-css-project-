@@ -113,10 +113,6 @@ button {
 }
 
 
-/* =========================
-   HERO
-========================= */
-
 .hero {
     background: var(--light-bg);
     padding: 85px 7% 100px;
@@ -159,10 +155,6 @@ button {
     margin-bottom: 30px;
 }
 
-
-/* =========================
-   SEARCH
-========================= */
 
 .search-box {
     background: white;
