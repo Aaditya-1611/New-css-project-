@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 10px;
+    position: relative;
+    display: inline-flex;
+    padding: 70px;
+}
+.c1{
+    width: 30%;
+    height: 200%;
+    border:1px solid black;
+    padding: 10px;
+    margin-right: 20px;
+}
+.c1 img{
+    width: 50%;
+    height: 50%;
+}
+.c2{
+    width: 30%;
+    height: 200%;
+    border:1px solid black;
+    padding: 10px;
+    margin-right: 20px;
+}
+.c2 img{
+    width: 50%;
+    height: 50%;
+}
+.c3{
+    width: 30%;
+    height: 200%;
+    border:1px solid black;
+    padding: 10px;
+    margin-right: 20px;
+}
+.c3 img{
+    width: 50%;
+    height: 50%;
+}
+.c1:hover{
+    background-image: linear-gradient(#EEAECA, #94bbe9);
+}
+.c2:hover{
+    background-image: linear-gradient(#EEAECA, #94bbe9);
+}
+.c3:hover{
+    background-image: linear-gradient(#EEAECA, #94bbe9);
+}
