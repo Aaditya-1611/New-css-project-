@@ -1,0 +1,25 @@
+.container{
+    background-color: rgb(209, 243, 18);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container div{
+    background-color: rgb(22, 85, 201);
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+/* media query -> resopnsive*/
+@media screen and (max-width: 760px){
+    body{
+        background-color: rgb(214, 41, 35);
+    }
+    .container{
+        flex-direction: column;
+        align-items:center;
+        
+    }
+    
+}
