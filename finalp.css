@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: #0b0b12;
+    background: #aa7dc1;
     color: #f5f5fa;
     font-family: Arial, sans-serif;
     line-height: 1.7;
@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 22px 9%;
-    border-bottom: 1px solid #242431;
+    border-bottom: 1px solid #6060eb;
 }
 
 .logo {
@@ -37,7 +37,7 @@ header {
 .logo span,
 h1 span,
 h2 span {
-    color: #8b68e1;
+    color: #5421d4;
 }
 
 nav {
@@ -46,13 +46,13 @@ nav {
 }
 
 nav a {
-    color: #b9b9c9;
+    color: #fbf6f6;
     font-size: 14px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ad8cff;
+    color: #85caef;
 }
 
 
@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 .tag {
-    color: #ad8cff;
+    color: #8264ce;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -100,7 +100,7 @@ h1 {
     display: inline-block;
     padding: 11px 19px;
     background: #ad8cff;
-    color: #100c1b;
+    color: #50359c;
     border-radius: 6px;
     font-weight: bold;
     font-size: 13px;
@@ -108,21 +108,20 @@ h1 {
 }
 
 .btn:hover {
-    background: #c3adff;
+    background: #8462e2;
     transform: translateY(-3px);
 }
 
 .secondary {
     background: transparent;
     color: white;
-    border: 1px solid #424052;
+    border: 1px solid #c878f3;
 }
 
 .secondary:hover {
-    background: #191725;
+    background: #ed51ac;
 }
 
-/* PROFILE IMAGE */
 
 .hero-image {
     position: relative;
@@ -133,7 +132,7 @@ h1 {
 .image-bg {
     position: absolute;
     inset: 20px -15px -15px 15px;
-    background: linear-gradient(135deg, #ad8cff, #55dce7);
+    background: linear-gradient(135deg, #ad97e6, #da84cd);
     border-radius: 15px;
     opacity: 0.8;
 }
@@ -142,7 +141,7 @@ h1 {
     position: relative;
     display: block;
     width: 100%;
-    height: 390px;
+    height: 100%;
     object-fit: cover;
     object-position: center top;
     border-radius: 15px;
@@ -154,7 +153,7 @@ h1 {
     bottom: 18px;
     left: -25px;
     padding: 10px 13px;
-    background: #191925;
+    background: #b61cd8;
     border: 1px solid #343344;
     border-radius: 7px;
     font-size: 11px;
@@ -163,8 +162,6 @@ h1 {
 .image-label span {
     color: #ad8cff;
 }
-
-/* GENERAL SECTIONS */
 
 .section {
     padding: 85px 9%;
@@ -185,10 +182,8 @@ h2 {
     font-size: 15px;
 }
 
-/* SKILLS */
-
 .skills {
-    background: #101019;
+    background: #aa7dc1;     /second bg
 }
 
 .skill-list {
@@ -215,10 +210,8 @@ h2 {
     transform: translateY(-3px);
 }
 
-/* PROJECTS */
-
 .projects {
-    background: #0b0b12;
+    background: #aa7dc1;       /third bg
 }
 
 .project-grid {
@@ -269,7 +262,7 @@ h2 {
 /* CONTACT */
 
 .contact {
-    background: #101019;
+    background: #aa7dc1;       /fourth bg
 }
 
 .contact > p:not(.tag) {
@@ -291,9 +284,6 @@ h2 {
 .socials a:hover {
     color: white;
 }
-
-/* FOOTER */
-
 footer {
     padding: 22px;
     text-align: center;
@@ -302,7 +292,6 @@ footer {
     font-size: 12px;
 }
 
-/* MOBILE RESPONSIVE */
 
 @media (max-width: 800px) {
     header {
