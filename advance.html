@@ -1,0 +1,82 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexa AI Pro</title>
+  <link rel="stylesheet" href="advance.css">
+</head>
+<body>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">✦ NEXA<span> AI</span></div>
+
+    <button class="new-chat" id="newChat">＋ New Chat</button>
+
+    <p class="label">RECENT CHATS</p>
+    <div id="history" class="history"></div>
+
+    <div class="sidebar-bottom">
+      <div class="avatar">N</div>
+      <div>
+        <strong>Nexa Assistant</strong>
+        <small>AI Workspace</small>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header>
+      <button class="icon-btn" id="menuBtn">☰</button>
+      <div class="header-title">
+        <strong>Nexa AI</strong>
+        <span class="status">● Online</span>
+      </div>
+      <button class="icon-btn" id="themeBtn">☼</button>
+    </header>
+
+    <section class="chat-area" id="chatArea">
+      <div class="welcome" id="welcome">
+        <div class="glow-icon">✦</div>
+        <p class="eyebrow">YOUR PERSONAL AI ASSISTANT</p>
+        <h1>Think bigger.<br><span>Create smarter.</span></h1>
+        <p class="subtitle">
+          Ask questions, explore ideas, write code and create something amazing.
+        </p>
+
+        <div class="suggestions">
+          <button data-prompt="Give me an advanced AI project idea">✧ Explore AI ideas</button>
+          <button data-prompt="Teach me JavaScript from basics">⌘ Learn coding</button>
+          <button data-prompt="Write a professional portfolio introduction">✎ Write something</button>
+          <button data-prompt="Explain how artificial intelligence works">◈ Understand AI</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom">
+      <form id="chatForm" class="composer">
+        <textarea id="userInput"
+          placeholder="Message Nexa AI..."
+          rows="1" required></textarea>
+
+        <div class="composer-footer">
+          <span>✦ Ready for your next idea</span>
+          <div class="actions">
+            <button type="button" id="voiceBtn" class="icon-btn"
+              title="Voice input">🎙</button>
+            <button type="submit" class="send-btn" title="Send message">↑</button>
+          </div>
+        </div>
+      </form>
+
+      <p class="disclaimer">
+        Nexa AI can make mistakes. Check important information.
+      </p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
