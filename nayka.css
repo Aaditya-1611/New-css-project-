@@ -1,123 +1,324 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nykaa Beauty Store </title>
-    < link rel="stylesheet" href="nayka.css">
-</head>
-<body>
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <div class="top-bar">
-        BEAUTY BONANZA ✨ | UP TO 50% OFF
-    </div>
+body {
+    font-family: Arial, sans-serif;
+    color: #292126;
+    background: #f1f0f0;
+}
 
-    <header>
-    <title>Nykaa Beauty Store</title>
-    <link rel="stylesheet" href="nayka.css">
-</head>
-<body>
+.top-bar {
+    background: #a20450;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
-    <div class="top-bar">
-        BEAUTY BONANZA ✨ | UP TO 50% OFF
-    </div>
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    gap: 20px;
+    border-bottom: 1px solid #eee;
+}
 
-    <header>
-        <div class="logo">nykaa</div>
+.logo {
+    color: #e80071;
+    font-size: 36px;
+    font-weight: 900;
+    font-family: Georgia, serif;
+}
 
-        <nav>
-            <a href="#">Categories</a>
-            <a href="#">Brands</a>
-            <a href="#">Makeup</a>
-            <a href="#">Skincare</a>
-            <a href="#">Haircare</a>
-        </nav>
+nav {
+    display: flex;
+    gap: 22px;
+}
 
-        <div class="header-right">
-            <input type="text" placeholder="Search products...">
-            <button>Sign In</button>
-            <span class="bag">🛍️</span>
-        </div>
-    </header>
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
 
-    <section class="hero">
-        <div class="hero-text">
-            <p class="tag">YOUR BEAUTY, YOUR RULES</p>
-            <h1>Glow Like<br>Never Before.</h1>
-            <p>Discover your favourite beauty essentials.</p>
-            <button class="shop-btn">SHOP NOW →</button>
-        </div>
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85"
-                 alt="Beauty and makeup products">
-        </div>
-    </section>
+nav a:hover {
+    color: #e80071;
+}
 
-    <section class="categories">
-        <h2>Shop By Category</h2>
-        <div class="category-grid">
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=400&q=80" alt="Makeup">
-                <h3>Makeup</h3>
-            </div>
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Skincare">
-                <h3>Skincare</h3>
-            </div>
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80" alt="Beauty">
-                <h3>Beauty</h3>
-            </div>
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=400&q=80" alt="Cosmetics">
-                <h3>Cosmetics</h3>
-            </div>
-        </div>
-    </section>
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-    <section class="products">
-        <h2>Trending Products ✨</h2>
+.header-right input {
+    width: 180px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline-color: #e80071;
+}
 
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=500&q=80" alt="Lipstick">
-                <p class="brand">BEAUTY ESSENTIALS</p>
-                <h3>Matte Finish Lipstick</h3>
-                <p class="price">₹499 <del>₹699</del></p>
-                <button>  Add to Bag</button>
-            </div>
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
 
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80" alt="Perfume">
-                <p class="brand">LUXURY BEAUTY</p>
-                <h3>Signature Fragrance</h3>
-                <p class="price">₹899 <del>₹1,299</del></p>
-                <button>Add to Bag</button>
-            </div>
+.header-right button {
+    background: #e80071;
+    color: white;
+    padding: 12px 17px;
+    border-radius: 5px;
+}
 
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=500&q=80" alt="Skincare">
-                <p class="brand">SKINCARE STUDIO</p>
-                <h3>Hydrating Face Cream</h3>
-                <p class="price">₹599 <del>₹799</del></p>
-                <button>Add to Bag</button>
-            </div>
+.bag {
+    font-size: 24px;
+}
 
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1599733589046-833b7c7e9b2b?auto=format&fit=crop&w=500&q=80" alt="Beauty products">
-                <p class="brand">DAILY BEAUTY</p>
-                <h3>Beauty Essentials Kit</h3>
-                <p class="price">₹999 <del>₹1,499</del></p>
-                <button>Add to Bag</button>
-            </div>
-        </div>
-    </section>
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d1a4b6;
+    margin: 25px 5%;
+    min-height: 370px;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
-    <footer>
-        <h2>nykaa</h2>
-        <p>Your beauty. Your confidence. Your style.</p>
-        <p>© 2026 Beauty Store. Demo website for learning.</p>
-    </footer>
+.hero-text {
+    padding: 45px;
+    flex: 1;
+}
 
-</body>
-</html>
+.tag {
+    color: #e80071;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.hero-text > p:not(.tag) {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.shop-btn {
+    background: #e80071;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.hero-image {
+    flex: 1;
+    height: 370px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categories,
+.products {
+    padding: 35px 5%;
+}
+
+h2 {
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category img:hover {
+    transform: translateY(-5px);
+}
+
+.category h3 {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 12px;
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 25px #00000012;
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.brand {
+    color: #888;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.product-card h3 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #e80071;
+    margin-bottom: 15px;
+}
+
+.price del {
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.product-card button {
+    width: 100%;
+    background: white;
+    color: #e80071;
+    border: 1px solid #e80071;
+    padding: 11px;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    background: #e80071;
+    color: white;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 35px 15px;
+    background: #292126;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    color: #ff4da6;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #ddd;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header-right input {
+        width: 140px;
+    }
+
+    .product-grid,
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px 4%;
+    }
+
+    .header-right input {
+        width: 120px;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin: 15px 4%;
+    }
+
+    .hero-text {
+        padding: 30px 22px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 240px;
+        flex: auto;
+    }
+
+    .categories,
+    .products {
+        padding: 25px 4%;
+    }
+
+    .category img {
+        height: 145px;
+    }
+
+    .product-card img {
+        height: 160px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
+```
