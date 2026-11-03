@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEO BALAST | Ready-to-Drink Orb Cocktails</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="leo.css">
+</head>
+<body>
+
+<!-- Original anime-style avatar sprites -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="face">
+      <ellipse cx="50" cy="56" rx="27" ry="26" fill="#ffe4d3"/>
+      <ellipse cx="38" cy="59" rx="6.5" ry="9" fill="#2a1a4a"/>
+      <ellipse cx="62" cy="59" rx="6.5" ry="9" fill="#2a1a4a"/>
+      <ellipse cx="38" cy="61" rx="4.6" ry="6.2" fill="var(--eye,#6a5cff)"/>
+      <ellipse cx="62" cy="61" rx="4.6" ry="6.2" fill="var(--eye,#6a5cff)"/>
+      <circle cx="36" cy="55.5" r="2.7" fill="#fff"/>
+      <circle cx="60" cy="55.5" r="2.7" fill="#fff"/>
+      <circle cx="40.5" cy="64" r="1.2" fill="#fff"/>
+      <circle cx="64.5" cy="64" r="1.2" fill="#fff"/>
+      <ellipse cx="29" cy="69" rx="5" ry="3" fill="#ff8fa8" opacity=".65"/>
+      <ellipse cx="71" cy="69" rx="5" ry="3" fill="#ff8fa8" opacity=".65"/>
+      <path d="M45 71 Q50 78 55 71 Z" stroke="#a0334f" stroke-width="1.6" fill="#ff6f8f" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Mango: twin-tail girl -->
+    <symbol id="av-mango" viewBox="0 0 100 100" style="--hair:#2b2d6e;--eye:#ff9f1c">
+      <path d="M22 40 Q2 62 10 96 Q24 84 26 58Z" fill="var(--hair)"/>
+      <path d="M78 40 Q98 62 90 96 Q76 84 74 58Z" fill="var(--hair)"/>
+      <ellipse cx="50" cy="46" rx="31" ry="30" fill="var(--hair)"/>
+      <use href="#face"/>
+      <path d="M22 54 Q22 20 50 20 Q78 20 78 54 Q70 36 58 41 Q53 30 46 41 Q32 34 22 54Z" fill="var(--hair)"/>
+      <path d="M30 49 Q38 45 45 49 M55 49 Q62 45 70 49" stroke="#1a1040" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="22" cy="40" r="6" fill="#ffd23f"/><circle cx="78" cy="40" r="6" fill="#ffd23f"/>
+    </symbol>
+
+    <!-- Berry: spiky silver-hair boy -->
+    <symbol id="av-berry" viewBox="0 0 100 100" style="--hair:#e4e9ff;--eye:#ff2d6f">
+      <ellipse cx="50" cy="46" rx="30" ry="29" fill="var(--hair)" stroke="#7a86c8" stroke-width="1.5"/>
+      <use href="#face"/>
+      <path d="M21 56 L18 32 L31 38 L35 14 L46 30 L54 10 L61 30 L72 16 L72 37 L84 30 L79 56 Q71 38 60 44 L50 37 L40 44 Q29 38 21 56Z" fill="var(--hair)" stroke="#7a86c8" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M30 50 L45 52 M55 52 L70 50" stroke="#1a1040" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Lime: purple bob girl with star clip -->
+    <symbol id="av-lime" viewBox="0 0 100 100" style="--hair:#7b2fd0;--eye:#00b3a6">
+      <path d="M17 52 Q15 18 50 17 Q85 18 83 52 L84 80 Q77 86 74 74 L74 52 L26 52 L26 74 Q23 86 16 80Z" fill="var(--hair)"/>
+      <use href="#face"/>
+      <path d="M21 52 Q23 21 50 21 Q77 21 79 52 L71 41 L62 48 L54 39 L46 48 L38 41 L29 48Z" fill="var(--hair)"/>
+      <path d="M30 50 Q38 46 45 50 M55 50 Q62 46 70 50" stroke="#1a1040" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M70 28 l2 5 5 .5 -4 3.5 1.2 5 -4.2 -2.8 -4.2 2.8 1.2 -5 -4 -3.5 5 -.5z" fill="#ffd23f"/>
+    </symbol>
+
+    <!-- Grape: neko-ear girl with long pink hair -->
+    <symbol id="av-grape" viewBox="0 0 100 100" style="--hair:#ff8fd0;--eye:#7a5cff">
+      <path d="M22 34 L24 6 L46 22Z" fill="var(--hair)"/>
+      <path d="M78 34 L76 6 L54 22Z" fill="var(--hair)"/>
+      <path d="M27 26 L27 14 L38 22Z" fill="#ffd3ee"/>
+      <path d="M73 26 L73 14 L62 22Z" fill="#ffd3ee"/>
+      <path d="M20 50 Q10 80 22 96 L32 62Z" fill="var(--hair)"/>
+      <path d="M80 50 Q90 80 78 96 L68 62Z" fill="var(--hair)"/>
+      <ellipse cx="50" cy="46" rx="30" ry="29" fill="var(--hair)"/>
+      <use href="#face"/>
+      <path d="M22 54 Q23 22 50 22 Q77 22 78 54 Q66 34 50 43 Q34 34 22 54Z" fill="var(--hair)"/>
+      <path d="M30 49 Q38 45 45 49 M55 49 Q62 45 70 49" stroke="#1a1040" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="bg-glow g1"></div>
+<div class="bg-glow g2"></div>
+<div class="bg-glow g3"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#home" class="logo">LEO<span>BALAST</span></a>
+  <nav>
+    <a href="#flavors">Flavors</a>
+    <a href="#showcase">3D Ring</a>
+    <a href="#why">Why Us</a>
+    <a href="#buy" class="btn small">Buy Now</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-text reveal">
+    <p class="tag">NEW • 180 ML ORB PACK</p>
+    <h1>Drink <em>Different.</em><br>Drink <em>Round.</em></h1>
+    <p class="lead">Premium ready-to-drink cocktails sealed in a bold ball-shaped can. Shake it, peel it, sip it. Party anywhere.</p>
+    <div class="cta">
+      <a href="#flavors" class="btn">Explore Flavors</a>
+      <a href="#showcase" class="btn ghost">Spin the Orbs</a>
+    </div>
+    <div class="stats">
+      <div><b>4</b><span>Flavors</span></div>
+      <div><b>180ml</b><span>Per Orb</span></div>
+      <div><b>15%</b><span>ABV</span></div>
+    </div>
+  </div>
+
+  <div class="scene" id="scene">
+    <div class="stage">
+      <div class="float f1">
+        <div class="orb mango"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>BLAZE<br>MANGO</b></div><i class="shine"></i></div>
+      </div>
+      <div class="float f2">
+        <div class="orb berry"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>NEON<br>BERRY</b></div><i class="shine"></i></div>
+      </div>
+      <div class="float f3">
+        <div class="orb lime"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>ARCTIC<br>LIME</b></div><i class="shine"></i></div>
+      </div>
+      <div class="floor"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="track">
+    <span>BALL SHAPED</span><span>★</span><span>BOLD FLAVOR</span><span>★</span><span>SHAKE &amp; SIP</span><span>★</span><span>PARTY READY</span><span>★</span>
+    <span>BALL SHAPED</span><span>★</span><span>BOLD FLAVOR</span><span>★</span><span>SHAKE &amp; SIP</span><span>★</span><span>PARTY READY</span><span>★</span>
+  </div>
+</div>
+
+<!-- FLAVORS -->
+<section class="section" id="flavors">
+  <h2 class="title reveal">Pick Your <em>Orb</em></h2>
+  <p class="sub reveal">Four original blends. Each one hits different.</p>
+
+  <div class="cards">
+    <article class="card tilt reveal mango">
+      <div class="mini"><div class="orb"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>BLAZE<br>MANGO</b></div><i class="shine"></i></div></div>
+      <h3>Blaze Mango</h3>
+      <p>Ripe mango, chili kiss and a smooth tequila finish.</p>
+      <span class="chip">Sweet • Spicy</span>
+    </article>
+
+    <article class="card tilt reveal berry">
+      <div class="mini"><div class="orb"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>NEON<br>BERRY</b></div><i class="shine"></i></div></div>
+      <h3>Neon Berry</h3>
+      <p>Wild strawberry and raspberry with a citrus squeeze.</p>
+      <span class="chip">Fruity • Fresh</span>
+    </article>
+
+    <article class="card tilt reveal lime">
+      <div class="mini"><div class="orb"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>ARCTIC<br>LIME</b></div><i class="shine"></i></div></div>
+      <h3>Arctic Lime</h3>
+      <p>Icy lime, mint and a crisp, clean margarita-style bite.</p>
+      <span class="chip">Zesty • Cool</span>
+    </article>
+
+    <article class="card tilt reveal grape">
+      <div class="mini"><div class="orb"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>MIDNIGHT<br>GRAPE</b></div><i class="shine"></i></div></div>
+      <h3>Midnight Grape</h3>
+      <p>Deep dark grape with vanilla smoke. Made for night vibes.</p>
+      <span class="chip">Rich • Smooth</span>
+    </article>
+  </div>
+</section>
+
+<!-- 3D RING SHOWCASE -->
+<section class="section showcase" id="showcase">
+  <h2 class="title reveal">The <em>3D</em> Orb Ring</h2>
+  <p class="sub reveal">Hover to pause. Move your mouse to tilt the world.</p>
+
+  <div class="ring-scene">
+    <div class="ring">
+      <div class="ring-item" style="--i:0"><div class="orb mango"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>BLAZE<br>MANGO</b></div><i class="shine"></i></div></div>
+      <div class="ring-item" style="--i:1"><div class="orb berry"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>NEON<br>BERRY</b></div><i class="shine"></i></div></div>
+      <div class="ring-item" style="--i:2"><div class="orb lime"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>ARCTIC<br>LIME</b></div><i class="shine"></i></div></div>
+      <div class="ring-item" style="--i:3"><div class="orb grape"><i class="lid"></i><div class="label"><small>LEO BALAST</small><b>MIDNIGHT<br>GRAPE</b></div><i class="shine"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <h2 class="title reveal">Why <em>LEO BALAST</em></h2>
+  <div class="features">
+    <div class="feat reveal"><span>🥤</span><h4>Unique Orb Pack</h4><p>Fits your hand, stands out on every table.</p></div>
+    <div class="feat reveal"><span>🧊</span><h4>Serve Chilled</h4><p>Pre-mixed and ready. No bar, no shaker, no stress.</p></div>
+    <div class="feat reveal"><span>🎉</span><h4>Made for Parties</h4><p>Pool, rooftop, road trip or house party. Orb goes everywhere.</p></div>
+    <div class="feat reveal"><span>♻️</span><h4>Recyclable</h4><p>Lightweight aluminium body, easy to recycle.</p></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section buy" id="buy">
+  <div class="buy-box reveal">
+    <h2>Ready to <em>roll?</em></h2>
+    <p>Get notified when LEO BALAST drops near you.</p>
+    <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='You are in! 🎉';">
+      <input type="email" placeholder="Enter your email" required>
+      <button class="btn">Notify Me</button>
+    </form>
+    <small>Please drink responsibly. 21+ only. This is a fictional brand demo.</small>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">LEO<span>BALAST</span></div>
+  <p>© 2026 LEO BALAST. All rights reserved.</p>
+</footer>
+
+<script>
+/* Put an anime avatar on every orb (hero, cards, 3D ring) */
+document.querySelectorAll('.orb').forEach(o => {
+  const f = o.closest('.mango,.berry,.lime,.grape') || o;
+  const k = ['mango','berry','lime','grape'].find(n => f.classList.contains(n)) || 'mango';
+  const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  s.setAttribute('class', 'avatar');
+  s.setAttribute('viewBox', '0 0 100 100');
+  s.innerHTML = '<use href="#av-' + k + '"/>';
+  o.insertBefore(s, o.querySelector('.label'));
+});
+
+/* Scroll reveal */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); }), { threshold: .15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* Hero parallax tilt */
+const scene = document.getElementById('scene');
+const stage = scene.querySelector('.stage');
+scene.addEventListener('mousemove', e => {
+  const r = scene.getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width - .5;
+  const y = (e.clientY - r.top) / r.height - .5;
+  stage.style.transform = `rotateY(${x * 30}deg) rotateX(${-y * 20}deg)`;
+});
+scene.addEventListener('mouseleave', () => stage.style.transform = '');
+
+/* Card 3D tilt */
+document.querySelectorAll('.tilt').forEach(c => {
+  c.addEventListener('mousemove', e => {
+    const r = c.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - .5;
+    const y = (e.clientY - r.top) / r.height - .5;
+    c.style.transform = `perspective(800px) rotateY(${x * 18}deg) rotateX(${-y * 18}deg) translateZ(10px)`;
+  });
+  c.addEventListener('mouseleave', () => c.style.transform = '');
+});
+
+/* Ring parallax */
+const rs = document.querySelector('.ring-scene');
+rs.addEventListener('mousemove', e => {
+  const r = rs.getBoundingClientRect();
+  const y = (e.clientY - r.top) / r.height - .5;
+  rs.style.setProperty('--tilt', (-10 - y * 20) + 'deg');
+});
+</script>
+</body>
+</html>
