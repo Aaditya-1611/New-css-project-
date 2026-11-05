@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREWORA | Premium Beer Experience</title>
+
+    <link rel="stylesheet" href="b.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- AGE VERIFICATION -->
+    <div class="age-overlay" id="agePopup">
+        <div class="age-box">
+            <h2>BREWORA</h2>
+            <p>This website is intended only for adults of legal drinking age in their location.</p>
+            <button onclick="enterSite()">I CONFIRM I AM OF LEGAL AGE</button>
+            <br>
+            <a href="https://www.google.com">EXIT WEBSITE</a>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">BREW<span>ORA.</span></div>
+
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#products">COLLECTION</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <a href="#products" class="nav-btn">EXPLORE</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <div class="tag">EST. 2026 — PREMIUM EXPERIENCE</div>
+
+            <h1>
+                BEYOND<br>
+                THE <span>BREW.</span>
+            </h1>
+
+            <p>
+                Discover a world of craftsmanship, character
+                and extraordinary brewing culture.
+                A premium visual experience celebrating the art of beer.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="primary-btn">DISCOVER MORE ↗</a>
+                <a href="#experience" class="secondary-btn">OUR STORY</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="glow"></div>
+            <div class="orbit"></div>
+
+            <div class="bottle">
+                <div class="bottle-neck"></div>
+
+                <div class="bottle-body">
+                    <div class="bottle-label">
+                        <h2>BREWORA</h2>
+                        <span>GOLDEN CRAFT</span>
+                        <small>PREMIUM COLLECTION</small>
+                    </div>
+                </div>
+
+                <div class="bottle-base"></div>
+            </div>
+
+            <div class="float-text">THE ART OF BREWING</div>
+            <div class="small-circle">EST.<br>2026</div>
+        </div>
+
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <div>
+            CRAFT • QUALITY • PASSION • BREWORA •
+            CRAFT • QUALITY • PASSION • BREWORA •
+        </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+
+        <div class="section-tag">OUR SIGNATURE COLLECTION</div>
+
+        <h2 class="section-title">Explore The Collection</h2>
+
+        <p class="section-desc">
+            Crafted visuals inspired by the world of premium brewing.
+        </p>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-image">🍺</div>
+                <h3>Golden Lager</h3>
+                <p>A bright golden-inspired classic with a clean design.</p>
+                <div class="details">SIGNATURE COLLECTION</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍻</div>
+                <h3>Amber Craft</h3>
+                <p>A warm amber aesthetic with a bold craft identity.</p>
+                <div class="details">CRAFT COLLECTION</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍺</div>
+                <h3>Dark Reserve</h3>
+                <p>A deep, rich visual identity for the premium range.</p>
+                <div class="details">RESERVE COLLECTION</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+
+        <div class="experience-content">
+            <div class="section-tag">MORE THAN A BRAND</div>
+
+            <h2>
+                THE ART OF<br>
+                <span>EXTRAORDINARY.</span>
+            </h2>
+
+            <p>
+                BREWORA represents bold design, timeless style
+                and the creativity of modern brewing culture.
+                Every detail is designed to create a memorable experience.
+            </p>
+
+            <a href="#contact" class="primary-btn">GET IN TOUCH ↗</a>
+        </div>
+
+        <div class="experience-circle">
+            THE<br>BREWORA<br>EXPERIENCE
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <h2>BREWORA.</h2>
+
+        <p>
+            THE ART OF BEER. THE POWER OF DESIGN.<br>
+            © 2026 BREWORA. ALL RIGHTS RESERVED.
+        </p>
+
+        <div class="age-note">
+            FOR ADULTS OF LEGAL DRINKING AGE ONLY.
+            PLEASE DRINK RESPONSIBLY.
+        </div>
+    </footer>
+
+    <script>
+        function enterSite() {
+            document.getElementById("agePopup").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
